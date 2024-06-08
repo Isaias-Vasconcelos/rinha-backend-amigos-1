@@ -6,19 +6,19 @@ Lembrando que:
 
 `A API que mais aceitar requisição vence!`
 
-`Vocês terão 1 semana para construir a API`
+`!Vocês terão 1 semana para construir a API!`
 
-`Qualquer arquitetura e linguagem é valida`
+`Qualquer arquitetura e linguagem é valida.`
 
-`Siga as regras`
+`!Siga as regras!`
 
 O desafio é... que rufem os tambores 🥁...
 
-## Você deverá construir uma `api  de provador de roupas` ...
+## Você deverá construir uma `api de provador de roupas` ...
 
  #### Funcionalidades :
 
-A api deverá receber e retornar um cliente no formato que está na pasta de exemplos no repositório, onde cada cliente deverá receber uma lista de roupas que ele escolheu para provar no campo `clothes`, as roupas que o cliente escolheu para provar serão armazenadas em outra tabela, onde a tabela roupas possui um relacionamento com a tabela clientes.
+A api deverá receber e retornar os clientes no formato que está na pasta de exemplos no repositório, onde cada cliente deverá receber uma lista de roupas que ele escolheu para provar no campo `clothes`, as roupas que o cliente escolheu para provar serão armazenadas em outra tabela, onde a tabela roupas possui um relacionamento com a tabela clientes.
 
 - Criação de clientes ;
 - Listagem de clientes;
