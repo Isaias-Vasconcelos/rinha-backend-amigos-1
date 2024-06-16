@@ -2,11 +2,9 @@ package com.rinha.backend_amigos.rinha.backend.model;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
-import lombok.*;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
 @Entity
 @Table(name = "clientes")
@@ -17,7 +15,7 @@ public class Client {
     @Column(nullable = false)
     private String name;
     @Column(nullable = false)
-    private String lastName;
+    private String lastname;
 
     @OneToMany(mappedBy = "client", cascade = CascadeType.ALL, orphanRemoval = true)
     @JsonManagedReference
@@ -41,8 +39,8 @@ public class Client {
         return name;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getLastname() {
+        return lastname;
     }
 
     public void setId(String id) {
@@ -53,8 +51,8 @@ public class Client {
         this.name = name;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
     }
 
     public void setClothesToTry(List<Clothes> clothesToTry) {

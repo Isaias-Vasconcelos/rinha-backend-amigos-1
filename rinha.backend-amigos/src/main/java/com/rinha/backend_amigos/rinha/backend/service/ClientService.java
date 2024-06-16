@@ -9,8 +9,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.Set;
-import java.util.stream.Collectors;
 
 @Service
 public class ClientService {
@@ -30,7 +28,7 @@ public class ClientService {
 
         Client client = new Client();
         client.setName(clientDTO.getName());
-        client.setLastName(clientDTO.getLastName());
+        client.setLastname(clientDTO.getLastName());
 
         clientDTO.getClothes().forEach(clothesName -> {
             Clothes clothes = new Clothes();
