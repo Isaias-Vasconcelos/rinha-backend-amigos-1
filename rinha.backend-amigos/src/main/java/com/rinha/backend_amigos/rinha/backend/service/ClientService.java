@@ -27,10 +27,6 @@ public class ClientService {
     }
 
     public Client createClient(ClientDTO clientDTO) {
-        Optional<Client> existingClient = clientRepository.findByName(clientDTO.getName());
-        if (existingClient.isPresent()) {
-            throw new RuntimeException("Cliente já existe");
-        }
 
         Client client = new Client();
         client.setName(clientDTO.getName());
